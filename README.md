@@ -10,6 +10,7 @@ Give a summary description of Four design patterns that you choose from the foll
 > Do not add diagrams, and do not try to give a complete description of the patterns as found in the books. Rather think of how you would explain the essential ideas of these patterns in a few sentences to a colleague while drinking coffee.
 
 **ADAPTER**
+
 Intro - software design pattern that allows the interface of an existing class to be used as another interface.
  
 **Q1. WHAT KIND OF PROBLEM(S) YOU CAN SOLVE WITH THAT PATTERN AND WHEN YOU USE IT, MAYBE WITH A SHORT EXAMPLE**
