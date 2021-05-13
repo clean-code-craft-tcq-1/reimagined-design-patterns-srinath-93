@@ -66,3 +66,20 @@ Q4. SUMMARY: To brief a little into what the most common use cases for a decorat
 Applying or removing decorators based on changes in state is another common use case. Depending on the scope of the state, decorators can be applied or removed in bulk.
 In conclusion, it helps add new behavior at run time, and functionality as well.
 
+**OBSERVER**
+Q1. WHAT KIND OF PROBLEM(S) YOU CAN SOLVE WITH THAT PATTERN AND WHEN YOU USE IT, MAYBE WITH A SHORT EXAMPLE
+ANS:
+The Observer defines a one-to-many relationship so that when one object changes state, the others are notified and updated automatically. For example, in a Battery Management System, upon detection of an over current or thermal runaway, the warning systems are automatically triggered and notify the end application/front-end solution about this high priority alert.
+
+Q2. HOW THE PATTERN WORKS, WHAT THE BASIC IDEA OF THE PATTERN IS
+ANS:	There would be a “keeper" of the data model or the subject. The Observers register themselves with the subject as they are created. Whenever the Subject changes, it broadcasts to all registered Observers that it has changed, and each Observer queries the Subject for that subset of the Subject's state that it is responsible for monitoring.
+This allows the number and "type" of "view" objects to be configured dynamically, instead of being statically specified at compile-time.
+
+Q3. WHAT IS THE MAIN ADVANTAGE AND DISADVANTAGE OF USING THIS PATTERN 
+ANS:
+Disadvantages: The Observer interface involves inheritance and becomes complex during implementation. There is no option for composition, as the Observer interface can be instantiated.
+
+Advantages: The Observer pattern lets you vary subjects and observers independently. You can reuse subjects without reusing their observers, and vice versa. It lets you add observers without modifying the subject or other observers.
+
+
+Q4. SUMMARY: This design pattern specifies a "pull" interaction model. Instead of the Subject "pushing" what has changed to all Observers, each Observer is responsible for "pulling" its particular "window of interest" from the Subject.
