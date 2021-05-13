@@ -39,3 +39,30 @@ b. Sometimes many adaptations are required along an adapter chain to reach the t
 Advantages:
 a. It provides transparency by presenting the design of an application in a modular manner.
 b. Contributes to software flexibility.
+
+Q4. SUMMARY: The primary purpose of the adapter pattern is to do what physical adapters do in the real world. Just as power adapters provide a wrapper around a power plug for use in a foreign wall socket, an implementation of a software adapter will wrap around a class to provide it with a more common interface that consumers would expect.
+
+**DECORATOR**
+Q1. WHAT KIND OF PROBLEM(S) YOU CAN SOLVE WITH THAT PATTERN AND WHEN YOU USE IT, MAYBE WITH A SHORT EXAMPLE
+ANS:
+What problems can it solve?
+•  Responsibilities should be added to (and removed from) an object dynamically at run-time
+•  Allows an existing rigid functionality to become user-friendly and interactive as well.
+Example: In a smart home setup, remote control of the lights or utilities is enabled by the use of decorators.
+
+Q2. HOW THE PATTERN WORKS, WHAT THE BASIC IDEA OF THE PATTERN IS
+ANS:	
+The decorator pattern can be used to extend (decorate) the functionality of a certain object statically, or in some cases at run-time, independently of other instances of the same class, provided some groundwork is done at design time. This is achieved by designing a new Decorator class that wraps the original class.
+
+Q3. WHAT IS THE MAIN ADVANTAGE AND DISADVANTAGE OF USING THIS PATTERN 
+ANS:
+Disadvantages:
+Decorators need adapters to implememt the new feature or flexibility aspect. This makes it complex in a coding perspective.
+
+Advantages:
+It is user friendly and indepedent. It removes dependency especially when a large system is considered.
+
+Q4. SUMMARY: To brief a little into what the most common use cases for a decorator are – 
+Applying or removing decorators based on changes in state is another common use case. Depending on the scope of the state, decorators can be applied or removed in bulk.
+In conclusion, it helps add new behavior at run time, and functionality as well.
+
